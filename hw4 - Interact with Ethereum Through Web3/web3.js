@@ -2,9 +2,9 @@
 // If you want, you can also deploy it in a simple web app
 const Web3 = require('web3')
 // Get the endpoint under the correct test net in Infura
-var web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/eafd0ea602544b388d0dc41b50e29544'));
+var web3 = new Web3(new Web3.providers.HttpProvider('https://kovan.infura.io/v3/ac11dac20eb8437a8724cc33ddb7dfc7'));
 // Get your contract's deployed address, access that through the link in Remix console.
-const address = '0xF0b4D212fa1666C14Aa46F009647B83D73Dc2ACe';
+const address = '0xCc9687E4A696A012b2DbC16d464373f419edd639';
 // Your contract's ABI, from Remix IDE
 const ABI  = [
 	{
@@ -92,7 +92,6 @@ const ABI  = [
 		"type": "event"
 	}
 ];
-
 
 // Get properties regarding the function calls
 web3.eth.getBalance
